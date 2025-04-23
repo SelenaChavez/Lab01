@@ -5,6 +5,7 @@
 
 bool goes_before(int x, int y);
 /* Abstract total order for sorting algorithms */
+// Devuelve true si x es menor a y
 
 bool array_is_sorted(int a[], unsigned int length);
 /* Checks if the array 'a' is in ascending order */

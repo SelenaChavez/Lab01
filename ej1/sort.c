@@ -8,11 +8,15 @@
 
 
 static void insert(int a[], unsigned int i, unsigned int length) {
-    /* needs implementation */
+for ( unsigned int j = i; j > 0 && goes_before( a[j], a[j-1] ); j-- ) {
+    swap( a, j-1, j);
+    array_dump( a, length );
+}
 }
 
 void insertion_sort(int a[], unsigned int length) {
     for (unsigned int i = 1; i < length; ++i) {
         insert(a, i, length);
+        assert (array_is_sorted( a, i ));
     }
 }

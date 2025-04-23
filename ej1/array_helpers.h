@@ -14,6 +14,7 @@ void array_dump(int a[], unsigned int length);
 /*
     Write the content of the array 'a' into stdout. The array 'a' must have
     exactly 'length' elements.
+    Imprime el arreglo de length elementos en pantalla
 */
 
 void array_copy(int dst[], int src[], unsigned int length);
